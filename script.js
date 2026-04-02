@@ -17,9 +17,9 @@ const SITE_CONFIG = {
   heroSubtitle: "GNIT Kolkata | 2nd Year ECE | Ardent Computech Pvt. Ltd.",
 
   aboutPrimary:
-    "I am a 2nd year ECE Engineering student from GNIT, Kolkata, who completed an intensive 10-day AI/ML training program at Ardent Computech Pvt. Ltd. with a strong focus on practical implementation.",
+    "We are 2nd year ECE Engineering students from GNIT, Kolkata, who completed an intensive 10-day AI/ML training program at Ardent Computech Pvt. Ltd. with a strong focus on practical implementation.",
   aboutSecondary:
-    "Across the training journey, I moved from fundamentals to guided project execution, practiced 60 MCQs, explored essential tools, and built confidence to pursue AI-focused careers with a portfolio-first mindset.",
+    "Across the training journey, we moved from fundamentals to guided project execution, practiced 60 MCQs, explored essential tools, and built confidence to pursue AI-focused careers with a portfolio-first mindset.",
 
   trainerLine:
     "Mentored students through AI, Machine Learning, and full-stack project workflows with a practical, industry-oriented approach focused on clarity, consistency, and real implementation.",
@@ -46,18 +46,38 @@ const SITE_CONFIG = {
 // Easy placeholders for student names + links
 const STUDENTS = [
   {
-    name: "Aniket Saha",
-    image: "https://avatars.githubusercontent.com/u/12345678?v=4",
+    name: "Student Name 1",
+    image: "",
     department: "ECE",
     year: "2nd Year",
     bio: "Focused on practical Python workflows and data-driven project development with a growing interest in ML engineering.",
-    github: "https://github.com/Aniketsaha1122/Portfolio",
-    linkedin: "https://www.linkedin.com/in/aniket-saha-a74337326?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    github: "https://github.com/",
+    linkedin: "https://www.linkedin.com/",
+    cv: "https://drive.google.com/"
+  },
+  {
+    name: "Student Name 2",
+    image: "",
+    department: "ECE",
+    year: "2nd Year",
+    bio: "Built strong fundamentals in NumPy, Pandas, and model basics while exploring automation and applied AI use cases.",
+    github: "https://github.com/",
+    linkedin: "https://www.linkedin.com/",
+    cv: "https://drive.google.com/"
+  },
+  {
+    name: "Student Name 3",
+    image: "",
+    department: "ECE",
+    year: "2nd Year",
+    bio: "Interested in computer vision and intelligent systems, with a project-first learning approach and clean coding practice.",
+    github: "https://github.com/",
+    linkedin: "https://www.linkedin.com/",
     cv: "https://drive.google.com/"
   }
 ];
 
-  /* ==========================================
+/* ==========================================
    Reusable Data Models (Duplicate Easily)
    ========================================== */
 const JOURNEY_POINTS = [
@@ -260,7 +280,7 @@ function applyConfigText() {
   $("#trainerLine").textContent = SITE_CONFIG.trainerLine;
 
   $("#footerMeta").textContent = `${SITE_CONFIG.collegeName} | ${SITE_CONFIG.trainingInstitute} | Trained by ${SITE_CONFIG.trainerName}`;
-  $("#copyrightText").textContent = `Â© ${new Date().getFullYear()} ${SITE_CONFIG.collegeName} AI/ML Student Portfolio. All rights reserved.`;
+  $("#copyrightText").textContent = `© ${new Date().getFullYear()} ${SITE_CONFIG.collegeName} AI/ML Student Portfolio. All rights reserved.`;
 }
 
 /* ==========================================
@@ -678,4 +698,3 @@ function initApp() {
 }
 
 document.addEventListener("DOMContentLoaded", initApp);
-
